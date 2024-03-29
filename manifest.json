@@ -1,10 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Hello Extensions",
-  "description": "Base Level Extension",
+  "name": "google-chat-feed",
   "version": "1.0",
-  "action": {
-    "default_popup": "hello.html",
-    "default_icon": "hello_extensions.png"
-  }
+  "description": "Google Chat feed",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/chat/*"],
+      "js": ["scripts/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {}
 }

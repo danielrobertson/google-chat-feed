@@ -1,0 +1,11 @@
+{
+  "name": "google-chat-feed",
+  "version": "1.0.0",
+  "description": "Google Chat activity feed",
+  "scripts": {},
+  "author": "danielrobertson",
+  "license": "MIT",
+  "dependencies": {
+    "chrome-types": "^0.1.276"
+  }
+}
